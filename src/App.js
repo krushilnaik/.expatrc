@@ -3,6 +3,7 @@ import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import ExpatRC from './pages/ExpatRC';
 import NotFound from './pages/NotFound';
 import WelcomeScreen from './pages/WelcomeScreen';
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
 					<Route exact path='/app' children={<ExpatRC />} />
 					<Route path='/*' children={<NotFound />} />
 				</Switch>
+				<Footer />
 			</BrowserRouter>
 		</React.StrictMode>
 	);
